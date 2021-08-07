@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
 }
 
 .navbar {
@@ -13,7 +13,8 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    padding: 0 1rem;
+    padding: 0 15px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
 
 .navbar__brand {
@@ -24,7 +25,7 @@ body {
     width: 100%;
 }
 
-.nav__item {
+.button__primary {
     background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
     color: #fff;
     padding: 12px;
@@ -33,19 +34,96 @@ body {
     font-weight: 600;
 }
 
-.nav__item:hover {
+.button__primary:hover {
     cursor: pointer;
+}
+
+.container {
+    padding: 15px;
+}
+
+.hero__image__container {
+    position: relative;
+    width: 100%;
+}
+  
+.hero__image {
+    position: absolute;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    z-index: 2;
+
+}
+
+.hero__bg__pattern{
+    position: absolute;
+    
+}
+
+.hero__text {
+    font-size: 32px;
+    color: #1d3557;
+    font-weight: 900
+}
+
+.hero__item {
+    margin: 10px;
 }
 
 @media (min-width: 768px) {
     .navbar{
         padding: 0 3rem;
     }
+    .hero__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .hero__image__container {
+        width: 100%;
+    }
+      
+    .hero__image {
+        margin-top: 30px;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+        z-index: 3;
+    }
+    
+    .hero__text {
+        font-size: 32px;
+        color: #1d3557;
+        padding-top: 20px;
+        font-weight: 900;
+    }
+    
+    .hero__item {
+        margin: 10px;
+    }
+
 }
 
 @media (min-width: 1024px) {
-    .nav__item {
+
+    .container {
+        padding: 20px 80px;
+    }
+
+    .hero__image__container {
+        width: 100%;
+    }
+
+    .hero__text {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 100%;
+    }
+
+    .button__primary {
         padding: 1rem 2rem;
         font-size: 1rem;
+        border-radius: 0.4rem;
     }
 }
