@@ -40,6 +40,8 @@ body {
 
 .container {
     padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero__image__container {
@@ -61,6 +63,10 @@ body {
     
 }
 
+.hero__description {
+    margin-bottom: 40px;
+}
+
 .hero__text {
     font-size: 32px;
     color: #1d3557;
@@ -71,9 +77,172 @@ body {
     margin: 10px;
 }
 
+.video__content {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.expolre__our__menu__title {
+    text-align: center;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.food__menu__card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.food__image {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.food__card__description {
+    padding: 15px;
+}
+
+.food__card__lists__view__more .view__more__text {
+    text-align: center;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.restaurants__lists__container{
+    margin: 50px 0;
+}
+
+.restaurants__lists__title {
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.restaurants__lists__images__row1 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.restaurants__lists__images__row2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    width: 100%;
+
+}
+
+.restaurants__image1, .restaurants__image3 {
+    margin: 5px;
+    width: 150px;
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+    
+.restaurants__image2, .restaurants__image4 {
+    margin: 5px;
+    width: 200px;
+    height: 100px;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%); 
+}
+
+.stay__updated__title {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.stay__updated__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.get__updates {
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.email__input {
+    border: 1px solid #ee89a0;
+    border-radius: 4px;
+    background-color: #fcedf0;
+    padding: 10px;
+    height: 10px;
+}
+
+
+.quote__image__container {
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+    center center / cover no-repeat;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.quote__image__overlay {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    opacity: 49%;
+    background-color: #1d3557;
+    border-radius: 10px;
+}
+
+.quote__image__container .quote__image__description {
+    position: absolute;
+    font-weight: 900;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.zomato__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem 1rem 0 0;
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+}
+
+.footer__logo__brand img{
+    width: 100%;
+    filter: brightness(0) 
+    invert(1);
+    
+}
+
+.footer__list__content ul {
+    list-style: none;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+}
+
+.footer__list__content li {
+    margin: 5px;
+}
+
+
+
+
+
 @media (min-width: 768px) {
     .navbar{
         padding: 0 3rem;
+    }
+    .container {
+        padding-top: 0;
     }
     .hero__container {
         display: flex;
@@ -81,22 +250,14 @@ body {
         align-items: center;
     }
     .hero__image__container {
-        width: 100%;
+        margin-top: 20px;
     }
       
     .hero__image {
         margin-top: 30px;
-        width: 100%;
         border-radius: 8px;
         box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
         z-index: 3;
-    }
-    
-    .hero__text {
-        font-size: 32px;
-        color: #1d3557;
-        padding-top: 20px;
-        font-weight: 900;
     }
     
     .hero__item {
@@ -105,25 +266,25 @@ body {
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 
     .container {
-        padding: 20px 80px;
+        max-width: 1140px;
+
     }
 
-    .hero__image__container {
+    .hero__description {
         width: 100%;
-    }
-
-    .hero__text {
-        font-size: 48px;
-        font-weight: 900;
-        line-height: 100%;
     }
 
     .button__primary {
         padding: 1rem 2rem;
         font-size: 1rem;
         border-radius: 0.4rem;
+    }
+
+    .hero__text {
+        font-size: 46px;
+        line-height: 100%;
     }
 }
