@@ -149,6 +149,7 @@ body {
 }
 
 .expolre__our__menu__title {
+    color: #1d3557;
     text-align: center;
     font-weight: 900;
     margin: 20px 0;
@@ -181,6 +182,7 @@ body {
 }
 
 .restaurants__lists__title {
+    color: #1d3557;
     font-weight: 900;
     margin: 20px 0;
 }
@@ -216,6 +218,7 @@ body {
 }
 
 .stay__updated__title {
+    color: #1d3557;
     text-align: center;
     font-weight: 900;
     margin-bottom: 20px;
@@ -340,6 +343,96 @@ input::placeholder {
     
     .hero__item {
         margin: 10px;
+    }
+
+    .video__container {
+        display: flex;
+    }
+    .video__gradient__bg {
+        height: 150px;
+        left: 20px;
+    }
+    .video__items {
+        margin-right: 70px;
+    }
+    .explore__our__menu__container {
+        position: relative;
+        padding: 0 20px;
+        
+    }
+    .explore__our__menu__gradient__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: skewY(-5deg);
+        background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);;
+    }
+    .expolre__our__menu__title {
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+    .food__card__lists{
+        display: flex;
+        gap: 20px;
+    }
+    #pizza {
+        margin-top: -30px;
+        margin-bottom: 35px;
+    }
+    .food__menu__card {
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    .view__more__text {
+        background-image: none;
+    }
+    .restaurants__lists__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .restaurants__lists__title {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    .stay__updated__container{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .stay__updated__content {
+        width: 450px;
+    }
+    .stay__updated__title {
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .stay__updated__items input {
+        width: 100%;
+        margin-right: 10px;
+    }
+    .stay__updated__button > button {
+        padding: 8px;
+        width: 120px;
+        text-align: center;
+
+    }
+    .quote__image__container .quote__image__description {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .quote__image__container , .quote__image__overlay {
+        height: 300px;
+    }
+    .zomato__footer {
+        flex-direction: row;
+        justify-content: space-around;
+        
     }
 
 }
