@@ -21,9 +21,23 @@
                     <img src="assets/logo.png" alt="logo" class="navbar__logo">
                 </div>
                 <div class="navbar__nav__items">
-                    <button class="button__primary">Order Food</button>
+                    <button class="button__primary hide__mobile">Order Food</button>
+                    <button onclick="myFunction()" class="hamburger__menu button__primary mobile__only">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
                 </div>
             </nav>
+            <div class="navbar__nav__dropdown__items">
+                <ul>
+                    <li>Products</li>
+                    <li>Restaurants</li>
+                    <li>Pricing</li>
+                    <li>About Us</li>
+                </ul>
+                <button class="dropdown__button button__primary">Order Food</button>
+            </div>
         </header>
         <main class="container">
             <!-- Hero section -->
@@ -46,7 +60,10 @@
                 <div class="video__items">
                     <iframe src="https://player.vimeo.com/video/323795266" frameborder="0"
                         allow="autoplay; fullscreen; picture-in-picture" class="video__iframe"></iframe>
+                    <div class="video__gradient__bg">
+                    </div>
                 </div>
+
                 <div class="video__description">
                     <h4 class="video__content">Your food will be prepared safely with an experienced chef, without
                         compromising on the quality
@@ -99,6 +116,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Stay Updated -->
             <section class="stay__updated__container">
                 <h1 class="stay__updated__title">Stay Updated</h1>
                 <div class="stay__updated__items">
@@ -108,6 +126,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Image Quote Overlay -->
             <section class="quote__image__container">
                 <div class="quote__image__overlay"></div>
                 <div class="quote__image__description">
@@ -115,6 +134,7 @@
                 </div>
             </section>
         </main>
+        <!-- Footer -->
         <footer class="zomato__footer">
             <div class="footer__logo__brand">
                 <img src="assets/logo.png" alt="">
@@ -129,6 +149,8 @@
                 </ul>
             </div>
         </footer>
+
+        <script src="main.js"></script>
     </body>
 
 </html>
