@@ -439,6 +439,74 @@ input::placeholder {
 
 @media (min-width: 1200px) {
 
+    .video__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video__content {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .expolre__our__menu__title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .view__more__text {
+        transition: 0.2s;
+    }
+
+    .food__card__lists__view__more .view__more__text:hover {
+        margin: 0 300px;
+        background-color: #fff;
+        color: #dd2476;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%)
+    }
+
+    .food__card__lists {
+        margin: 30px 0;
+    }
+
+    .restaurants__lists__title {
+        font-size: 3rem;
+    }
+
+    .restaurants__lists__images__container {
+        margin: 30px 0;
+    }
+    .restaurants__image1, .restaurants__image3 {
+        margin: 5px;
+        width: 250px;
+        height: 180px;
+        border-radius: 4px;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    }
+        
+    .restaurants__image2, .restaurants__image4 {
+        margin: 5px;
+        width: 300px;
+        height: 250px;
+        border-radius: 4px;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%); 
+    }
+
+    .stay__updated__content {
+        margin: 30px 0;
+    }
+
+    .stay__updated__title {
+        font-size: 3rem
+    }
+
+    .stay__updated__button .get__updates {
+        padding: 0.5rem 2rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
     .container {
         max-width: 1140px;
 
