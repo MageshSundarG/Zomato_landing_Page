@@ -1,3 +1,5 @@
+// Main Javascript
+
 function myFunction() {
     var x = document.getElementsByClassName("navbar__nav__dropdown__items");
     console.log(x);
